@@ -16,6 +16,7 @@ public class ElytraAuraMod {
             FMLJavaModLoadingContext.get().getModEventBus()
                     .addListener(ElytraAuraMod::registerKeys);
             MinecraftForge.EVENT_BUS.register(new ElytraClientEvents());
+            MinecraftForge.EVENT_BUS.register(new ElytraWingRenderer());
         }
     }
 
